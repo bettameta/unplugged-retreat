@@ -87,6 +87,235 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/*-------------------------------------*/
+/*             MOBILE VERSION          */
+/*-------------------------------------*/
+
+/***  HEADER FOOTER ***/
+
+header,
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+header .content-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+
+}
+
+.header-divider{
+ 
+}
+
+header nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+
+header nav ul{
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+header nav ul li{
+  
+}
+
+/***  FOOTER  ***/
+
+.footer-content{
+
+}
+
+footer .contact{
+
+}
+
+footer .social{
+
+}
+
+footer .social h4{
+
+}
+
+footer .social-icons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.copy{
+
+}
+
+.copy h5{
+
+}
+
+/*** END HEADER FOOTER ***/
+
+/*-------------------------------------*/
+/*              HOMEPAGE               */
+/*-------------------------------------*/
+
+/*** MAIN  ***/
+
+.hero-area{
+  display: flex;
+  justify-content: left;
+  flex-flow: row wrap;
+
+}
+
+.content-wrapper{
+
+}
+
+/***  ASIDE  ***/
+aside{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-flow: row wrap;
+
+}
+.content-wrapper{
+
+}
+/***  FORM WITH FIELDS TO FILL OUT  ***/
+.form-description{
+ 
+}
+
+h3{
+
+}
+h4{  
+
+}
+
+.form-description p{
+  
+}
+
+
+/***  INPUT TYPE CLASSES  ***/
+
+.form input[type=text]{
+
+}
+
+.form input[type=button]{
+  
+}
+
+
+/***  FEATURES WITH ICONS ***/
+
+.features{
+  display: flex;
+   /*------------- LEAVING LEFT JUSTFY  **/
+  justify-content: left;
+  flex-flow: row wrap;
+}
+
+h2{
+
+}
+
+.content-wrapper{
+
+}
+
+.features .features-items{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+
+
+.tent-icon,
+.bed-icon,
+.utensils-icon,
+.footsteps-icon,
+.happy-face-icon,
+.wifi-icon{
+
+}
+
+.features-items-description{
+
+}
+
+/***  REVIEWS  ***/
+
+.reviews{
+  display: flex;
+  /*-------------- LEAVING LEFT JUSTFY  **/
+  justify-content: left;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+h2{
+
+}
+
+article p{
+
+}
+
+/*-------------------------------------*/
+/*              ABOUT                  */
+/*-------------------------------------*/
+
+.mission{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.contact-section{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+/*-------------------------------------*/
+/*              FAQ                    */
+/*-------------------------------------*/
+
+.faq{
+  display: flex;
+  /*-------------- LEAVING LEFT JUSTFY  **/
+  justify-content: left;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.faq .content-wrapper{
+  display: flex;
+  /*-------------- LEAVING LEFT JUSTFY  **/
+  justify-content: left;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
