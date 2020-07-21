@@ -173,7 +173,7 @@ footer .social-icons{
 
 .hero-area{
   display: flex;
-  justify-content: left;
+  justify-content: center;
   flex-flow: row wrap;
 
 }
@@ -185,7 +185,7 @@ footer .social-icons{
 /***  ASIDE  ***/
 aside{
   display: flex;
-  justify-content: left;
+  justify-content: center;
   align-items: center;
   flex-flow: row wrap;
 
@@ -225,8 +225,8 @@ h4{
 
 .features{
   display: flex;
-   /*------------- LEAVING LEFT JUSTFY  **/
-  justify-content: left;
+/*-------------- ? NOT LEFT JUSTFY //IT'S THE WRAP **/
+  justify-content: center;
   flex-flow: row wrap;
 }
 
@@ -264,8 +264,8 @@ h2{
 
 .reviews{
   display: flex;
-  /*-------------- LEAVING LEFT JUSTFY  **/
-  justify-content: left;
+  /*-------------- ? NOT LEFT JUSTFY //IT'S THE WRAP **/
+  justify-content: center;
   align-items: center;
   flex-flow: row wrap;
 }
@@ -284,14 +284,16 @@ article p{
 
 .mission{
   display: flex;
-  justify-content: left;
+  /*-------------- ? NOT LEFT JUSTFY //IT'S THE WRAP **/
+  justify-content: center;
   align-items: center;
   flex-flow: row wrap;
 }
 
 .contact-section{
   display: flex;
-  justify-content: left;
+  /*-------------- ? NOT LEFT JUSTFY //IT'S THE WRAP **/
+  justify-content: center;
   align-items: center;
   flex-flow: row wrap;
 }
@@ -302,16 +304,16 @@ article p{
 
 .faq{
   display: flex;
-  /*-------------- LEAVING LEFT JUSTFY  **/
-  justify-content: left;
+  /*-------------- ? NOT LEFT JUSTFY //IT'S THE WRAP **/
+  justify-content: center;
   align-items: center;
   flex-flow: row wrap;
 }
 
 .faq .content-wrapper{
   display: flex;
-  /*-------------- LEAVING LEFT JUSTFY  **/
-  justify-content: left;
+  /*-------------- ? NOT LEFT JUSTFY //IT'S THE WRAP **/
+  justify-content: center;
   align-items: center;
   flex-flow: row wrap;
 }
