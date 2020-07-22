@@ -15,6 +15,7 @@ html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
+
 }
 
 /*
@@ -91,7 +92,16 @@ textarea {
 /*             MOBILE VERSION          */
 /*-------------------------------------*/
 
+.content-wrapper{
+  width: 90%;
+  margin: 50px 0;
+}
+
 /***  HEADER FOOTER ***/
+
+header{
+  padding: 15px 0;
+}
 
 header,
 footer{
@@ -106,11 +116,14 @@ header .content-wrapper{
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  margin: 0px;
 
 }
 
 .header-divider{
- 
+  width: 100%;
+ /*------HOW DO YOU KNOW FOLLOWING MEASUREMENTS... NOTHING RENDERS------*/ 
+  
 }
 
 header nav{
@@ -118,26 +131,36 @@ header nav{
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
+  width: 60%;
 }
 
 
 header nav ul{
   display: flex;
   justify-content: space-around;
+  width: 100%;
   
 }
 
 header nav ul li{
-  
+
 }
 
 /***  FOOTER  ***/
-
-.footer-content{
+ /*------NEED TO GET THESE TO STACK SMALL... I THINK------*/ 
+footer .content-wrapper{
+  width: 55%;
+  margin: 50px 0;
 
 }
 
+
+footer p{
+  margin: 0px;
+}
+
 footer .contact{
+  margin-bottom: 50px;
 
 }
 
@@ -155,12 +178,21 @@ footer .social-icons{
   align-items: center;
 }
 
-.copy{
+footer .social-icons p{
+  /*------HOW DO YOU KNOW FOLLOWING MEASUREMENTS... NOTHING RENDERS------*/ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .copy{
+   /*------HOW DO YOU KNOW FOLLOWING MEASUREMENTS... NOTHING RENDERS------*/ 
+  margin: 20px 0;
 
 }
 
-.copy h5{
-
+footer .copy h5{
+  font-size: 1em;
 }
 
 /*** END HEADER FOOTER ***/
@@ -178,9 +210,7 @@ footer .social-icons{
 
 }
 
-.content-wrapper{
 
-}
 
 /***  ASIDE  ***/
 aside{
@@ -188,9 +218,6 @@ aside{
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-
-}
-.content-wrapper{
 
 }
 /***  FORM WITH FIELDS TO FILL OUT  ***/
@@ -225,16 +252,31 @@ h4{
 
 .features{
   display: flex;
-/*-------------- ? NOT LEFT JUSTFY //IT'S THE WRAP **/
   justify-content: center;
   flex-flow: row wrap;
+  width: 89%;
 }
 
-h2{
 
-}
 
 .content-wrapper{
+
+}
+
+  h2{
+    margin-bottom: 60px;
+
+}
+
+.features article{
+/*------NEED ACTUAL FONT FOR ACCURACY------------------------------*/
+  width: 60%;
+
+}
+
+
+.features p{
+  margin: 0px;
 
 }
 
@@ -264,17 +306,20 @@ h2{
 
 .reviews{
   display: flex;
-  /*-------------- ? NOT LEFT JUSTFY //IT'S THE WRAP **/
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
 }
 
-h2{
-
+.reviews h2{
+  margin-bottom: 50px;
 }
 
-article p{
+.reviews h2{
+  margin: 20px 0;
+}
+
+.review article p{
 
 }
 
@@ -284,7 +329,6 @@ article p{
 
 .mission{
   display: flex;
-  /*-------------- ? NOT LEFT JUSTFY //IT'S THE WRAP **/
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
@@ -292,19 +336,32 @@ article p{
 
 .contact-section{
   display: flex;
-  /*-------------- ? NOT LEFT JUSTFY //IT'S THE WRAP **/
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
 }
 
+.mission .content-wrapper{
+    width: 90%;
+    margin: 50px 0;
+  
+}
+ /*------I CAME UP WITH THIS SOMEHOW... LET'S SEE IF IT WORKS OUT------*/
+.contact-section .content-wrapper{
+    width: 90%;
+    margin: 50px 0;
+  
+}
+
+.contact-content p{
+  margin: 0
+}
 /*-------------------------------------*/
 /*              FAQ                    */
 /*-------------------------------------*/
 
 .faq{
   display: flex;
-  /*-------------- ? NOT LEFT JUSTFY //IT'S THE WRAP **/
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
@@ -312,10 +369,19 @@ article p{
 
 .faq .content-wrapper{
   display: flex;
-  /*-------------- ? NOT LEFT JUSTFY //IT'S THE WRAP **/
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+   /*------LET'S SEE IF 50PX WORKS FOR TOP-MARGIN------*/
+  margin-top: 50px;
+}
+
+.faq h2{
+  margin-bottom: 40px;
+}
+
+.faq-content{
+  margin-bottom: 50px;
 }
 
 /* ==========================================================================
