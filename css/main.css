@@ -220,12 +220,21 @@ aside{
   flex-flow: row wrap;
 
 }
+
+aside .content-wrapper{
+
+
+}
+
 /***  FORM WITH FIELDS TO FILL OUT  ***/
 .form-description{
  
+  
+
 }
 
 h3{
+  margin: 0;
 
 }
 h4{  
@@ -240,11 +249,13 @@ h4{
 /***  INPUT TYPE CLASSES  ***/
 
 .form input[type=text]{
-
+  display: flex;
+  justify-content center;
+  width: 86%;
 }
 
 .form input[type=button]{
-  
+  width: 88%
 }
 
 
@@ -254,13 +265,13 @@ h4{
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  width: 89%;
+  width: 100%;
 }
 
 
 
 .content-wrapper{
-
+  width: 88%
 }
 
   h2{
@@ -471,10 +482,144 @@ h4{
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+   
+  @media only screen and (min-width: 768px){
+    /*** TABLET STYLE HERE ***/
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+  /***************  HEADER  ******************/ 
+
+  header{
+    display: flex;
+    justify-content: center;
+
+  } 
+  header .content-wrapper{
+    width: 83%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  header nav{
+    display: flex;
+  
+    width: 16%;
+  }
+
+  header nav ul{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+
+  }
+
+  .header-divider{
+    display: none;
+  }
+
+  /***************  HERO AREA  ****************/ 
+
+  aside .content-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+  }
+
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form{
+    display: flex;
+    justify-content: ;
+    flex-flow: row wrap;
+    padding: 0 20px;
+  }
+
+  /***************  FEATURES  ******************/ 
+
+  .features article{
+
+  }
+
+  .features .features-items-description{
+      width: 83%:
+  }
+
+  /***************  REVIEWS  ******************/
+
+  .reviews article {
+
+  }
+
+  .reviews article div{
+      width: ;
+  }
+
+  /***************  FOOTER   ******************/  
+  
+  .footer .content-wrapper{
+      width: ;
+      margin: 100px 0;
+  }
+
+  .footer-content{
+
+  }
+
+  .footer .contact{
+
+  }
+
+  footer .copy{
+
+  }
+
 }
+    
+/*-------------------------------------*/
+/*              ABOUT                  */
+/*-------------------------------------*/
+
+  /***************  MISSION   ******************/ 
+.mission-content {
+  display:
+  justify-content: space-between;
+  align-items: 
+}
+
+.mission-content p {
+  width: 
+}
+
+  /***************  CONTACT   ******************/ 
+
+.contact-section .content-wrapper h2 {
+  width:
+}
+
+.contact-content {
+  display:
+  justify-content:
+  align-items:
+}
+/*-------------------------------------*/
+/*              FAQ                    */
+/*-------------------------------------*/
+
+.faq .content-wrapper {
+  justify-content: space-between;
+}
+
+.faq-content {
+  flex-basis: 40%;
+}
+
+.faq h2 {
+  width: 100%;
+}
+
+    @media only screen and (min-width: 1200px){
+    /*** DESKTOP STYLE HERE ***/
+    }
+
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
@@ -482,6 +627,8 @@ h4{
   (min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
+
+
 
 /* ==========================================================================
    Print styles.
