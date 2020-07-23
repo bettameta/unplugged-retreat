@@ -123,7 +123,8 @@ header .content-wrapper{
 .header-divider{
   width: 100%;
  /*------HOW DO YOU KNOW FOLLOWING MEASUREMENTS... NOTHING RENDERS------*/ 
-  
+ /*height: 1px;
+  margin: 10px 0 20px 0; */
 }
 
 header nav{
@@ -147,13 +148,19 @@ header nav ul li{
 }
 
 /***  FOOTER  ***/
- /*------NEED TO GET THESE TO STACK SMALL... I THINK------*/ 
+
+footer{
+/*------NEED TO GET THESE TO STACK SMALL... I THINK------*/ 
+  display: flex;
+  flex-direction: column;
+}
+
+ 
 footer .content-wrapper{
   width: 55%;
   margin: 50px 0;
 
 }
-
 
 footer p{
   margin: 0px;
@@ -171,10 +178,10 @@ footer .social{
 footer .social h4{
 
 }
-
+/*------NEED TO SEE THESE ICONS IN PLACE------*/ 
 footer .social-icons{
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -265,17 +272,12 @@ h4{
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  width: 100%;
+
 }
 
 
-
-.content-wrapper{
-  width: 88%
-}
-
-  h2{
-    margin-bottom: 60px;
+.features h2{
+  margin-bottom: 60px;
 
 }
 
@@ -323,10 +325,11 @@ h4{
 }
 
 .reviews h2{
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
-.reviews h2{
+.reviews h3{
+  width: 55%;
   margin: 20px 0;
 }
 
@@ -350,6 +353,10 @@ h4{
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
+
+.mission-content p{
+
 }
 
 .mission .content-wrapper{
@@ -486,23 +493,28 @@ h4{
   @media only screen and (min-width: 768px){
     /*** TABLET STYLE HERE ***/
 
+  .content-wrapper{
+    max-width: 640px;
+    margin: 100px 0;
+  }
+
   /***************  HEADER  ******************/ 
+
 
   header{
     display: flex;
-    justify-content: center;
-
+    justify-content: space-around;
+    padding: 33px 0;
   } 
+
   header .content-wrapper{
-    width: 83%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
   }
 
   header nav{
-    display: flex;
-  
-    width: 16%;
+    width: 20%;
   }
 
   header nav ul{
@@ -520,47 +532,54 @@ h4{
 
   aside .content-wrapper{
     display: flex;
-    align-items: center;
-    justify-content: center;
     justify-content: space-between;
+    flex-flow: row wrap;
+    margin: 50px 0;
   }
 
   aside .content-wrapper .form-description,
   aside .content-wrapper .form{
-    display: flex;
-    justify-content: ;
-    flex-flow: row wrap;
-    padding: 0 20px;
+    width: 40%;
+    margin: 0;
   }
 
   /***************  FEATURES  ******************/ 
 
   .features article{
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+  /*flex-basis: 50%;*/
   }
 
   .features .features-items-description{
-      width: 83%:
+      width: 50%;
   }
 
   /***************  REVIEWS  ******************/
 
   .reviews article {
-
+      display: flex;
+      justify-content: space-between;
+  
   }
 
   .reviews article div{
-      width: ;
+      width: 50%;
   }
 
   /***************  FOOTER   ******************/  
   
   .footer .content-wrapper{
-      width: ;
+      width: 65%;
       margin: 100px 0;
   }
 
   .footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
   }
 
@@ -569,7 +588,7 @@ h4{
   }
 
   footer .copy{
-
+    width: 100%;
   }
 
 }
@@ -580,32 +599,34 @@ h4{
 
   /***************  MISSION   ******************/ 
 .mission-content {
-  display:
+  display: flex;
   justify-content: space-between;
-  align-items: 
+  align-items: flex-start;
+  padding-top: 20px;
 }
 
 .mission-content p {
-  width: 
+  width: 45%;
 }
 
   /***************  CONTACT   ******************/ 
 
 .contact-section .content-wrapper h2 {
-  width:
+  width: 80%;
 }
 
-.contact-content {
-  display:
-  justify-content:
-  align-items:
+.contact-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
+
 /*-------------------------------------*/
 /*              FAQ                    */
 /*-------------------------------------*/
 
 .faq .content-wrapper {
-  justify-content: space-between;
+  justify-content: space-between; 
 }
 
 .faq-content {
