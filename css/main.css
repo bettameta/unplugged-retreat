@@ -118,7 +118,6 @@
   }
   
   
-  
   .header-divider{
     width: 100%;
     height: 1px;
@@ -139,8 +138,7 @@
     display: flex;
     justify-content: space-around;
     width: 100%;
-    /*  ************** I ADDED THIS AREA **********   */
-    padding: 0;
+
   }
   
   nav ul li{
@@ -201,7 +199,7 @@
   }
   
   
-  
+ /*-------- ASIDE ------------*/ 
   aside{
     display: flex;
     justify-content: center;
@@ -209,10 +207,14 @@
     flex-flow: row wrap;  
   
   }
-  .form{
-  
+ /*------- NEED TO ADDRESS .FORM BUTTONS --------------*/
+  aside .form .text
+  aside .form .button{
+    display: flex;
+    flex-grow: 1;
   
   }
+
   
   /*-------- FEATURES ------------*/
   .features{
@@ -319,9 +321,163 @@
   /*----------------------------------------------------
                       TABLET MEDIA QUERIES 
   -----------------------------------------------------*/
+ 
   @media only screen and (min-width: 768px){
+    /*----------- GENERAL STYLES ------------------*/
+    .content-wrapper{
+      max-width: 640px;
+      margin: 100px 0;
+    }
+  /*------------ HEADER AND FOOTER------------------------*/
+  /*------------ HEADER ------------------------*/    
+     header{
+      padding: 40px 0;
+     }
+
+     header .content-wrapper{
+      display: flex;
+      justify-content: space-between;
+       padding: 33px 0;
+     }
+
+     header nav{
+       width: 20%;
+     }
+
+     header nav ul{
+       display: flex;
+       justify-content: space-between;
+
+     }
+
+     .header-divider{
+       display: none;
+
+     }
+    
+     /*------------ FOOTER ------------------------*/
+     footer .content-wrapper{
+      width: 65%;
+      margin: 100px 0;
+    }
+
+    .footer-content{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+        /*--- I ADDED THIS TO FIX IT  -----*/    
+        align-items: baseline;
+
+    }
+
+    footer .contact{
+      margin-bottom: 0;
+    }
+    
+    footer .copyright{
+    /*-  width: 100%; */
+    }
+
+    /*----------------------------------------------------
+                  TABLET HOME PAGE 
+  -----------------------------------------------------*/
+    /*------------ HERO AREA ------------------------*/
+
+
+
+    /*------------ ASIDE -------------------------*/
+    aside .content-wrapper{
+      display: flex;
+      justify-content: space-between;
+    /*flex-flow: row wrap; ----------  */
+      margin: 50px 0;
+    } 
+    
+    aside .content-wrapper .form-description
+    aside .content-wrapper .form{
+      width: 40%;
+      margin: 0;
+    }
+
+
+    /*------------ FEATURES -----------------------*/
+    .features article{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: column;
+      flex-basis: 50%;
+    }
+
+    .features .features-item-description{
+      width: 50%;
+    }
+
+    /*------------ REVIEWS ------------------------*/
+    .reviews article{
+      display: flex;
+      justify-content: space-between;
+    }
+    .reviews article div{
+      width: 49%;
+    }
+
+
+/*----------------------------------------------------
+                  TABLET ABOUT PAGE 
+  -----------------------------------------------------*/
+/*------------ MISSION ------------------------*/
+    .mission content{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      
   
-  }
+    }
+
+    .mission-content p{
+     
+      width: 45%;
+  
+    }
+
+/*------------ MAP ----------------------------*/
+
+/*------------ CONTACT ------------------------*/
+    .contact-section .content-wrapper h2{
+      width: 80%;
+    }
+
+    .contact-content{
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+
+/*----------------------------------------------------
+                  TABLET FAQ PAGE 
+  -----------------------------------------------------*/
+    .faq .content-wrapper{
+      display: flex;
+      justify-content: space-between;
+    /*--- I ADDED THIS TO FIX IT  -----*/    
+        align-items: baseline;
+    }
+
+    .faq-content{
+      flex-basis: 45%;
+  
+    }
+
+    .faq h2{
+      width: 100%
+    }
+
+
+
+}
+
   
   
   
@@ -330,7 +486,22 @@
   -----------------------------------------------------*/
   @media only screen and (min-width: 1200px){
   
-  }
+  
+  /*------------ HEADER AND FOOTER------------------------*/
+  /*------------ HEADER ------------------------*/ 
+
+  /*----------------------------------------------------
+                  DESKTOP ABOUT PAGE 
+  -----------------------------------------------------*/
+
+  /*----------------------------------------------------
+                  DESKTOP ABOUT PAGE 
+  -----------------------------------------------------*/
+
+  /*----------------------------------------------------
+                  DESKTOP FAQ PAGE 
+  -----------------------------------------------------*/
+}
   
   
   
