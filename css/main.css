@@ -207,13 +207,17 @@
     flex-flow: row wrap;  
   
   }
- /*------- NEED TO ADDRESS .FORM BUTTONS --------------*/
-  aside .form .text
-  aside .form .button{
+ /*------- NEEDS HELP TO ADJUST CHECK HTML --------------*/
+  .form{
     display: flex;
-    flex-grow: 1;
+    justify-content: left;
+    align-items: stretch;
+    justify-content: row wrap;
+    ;
+    width: 88%;
   
   }
+ /*------- NEED TO ADDRESS BUTTON STYLING --------------*/
 
   
   /*-------- FEATURES ------------*/
@@ -399,6 +403,16 @@
       margin: 0;
     }
 
+    .find-out{
+      width: 40%;
+    }
+    
+    .form{
+      display: flex;
+      justify-content: center;
+      flex-flow: column;
+      width: 40%;
+    }
 
     /*------------ FEATURES -----------------------*/
     .features article{
