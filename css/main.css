@@ -204,19 +204,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-flow: row wrap;  
+    flex-flow: row wrap; 
   
   }
- /*------- NEEDS HELP TO ADJUST CHECK HTML --------------*/
-  .form{
-    display: flex;
-    justify-content: left;
-    align-items: stretch;
-    justify-content: row wrap;
-    ;
-    width: 88%;
-  
-  }
+ /*------- NEEDS HELP TO ADJUST CHECK HTML 
+ ---------DOES THE H3 NEED TO BE SEPARATED? ------------*/
+ .form{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+}
  /*------- NEED TO ADDRESS BUTTON STYLING --------------*/
 
   
@@ -427,12 +425,15 @@
   /*------------ HEADER AND FOOTER------------------------*/
   /*------------ HEADER ------------------------*/    
      header{
-      padding: 40px 0;
+      padding: 33px 0;
+      display: flex;
+      justify-content: space-around;
      }
 
      header .content-wrapper{
       display: flex;
       justify-content: space-between;
+      width: 100%;
        padding: 33px 0;
      }
 
@@ -461,7 +462,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-        /*--- I ADDED THIS TO FIX IT  -----*/    
+        /*--- I ADDED THIS TO ADJUST HEIGHT  -----*/    
         align-items: baseline;
 
     }
@@ -471,7 +472,11 @@
     }
     
     footer .copyright{
-    /*-  width: 100%; */
+    /*-  width: 100%;  MAKES CONTENT MOVE TO THE LEFT? It should be centered
+                        SO ADDED JUSTIFY-CONTENT TO FIX??*/
+      display: flex;
+      justify-content: center;
+      width: 100%
     }
 
     /*----------------------------------------------------
@@ -480,30 +485,32 @@
     /*------------ HERO AREA ------------------------*/
 
 
-
+    /*********** FIX BUTTONS MAYBE SPLIT .FORM DIV? **/
     /*------------ ASIDE -------------------------*/
     aside .content-wrapper{
       display: flex;
       justify-content: space-between;
-    /*flex-flow: row wrap; ----------  */
+    
+          flex-flow: row wrap;
       margin: 50px 0;
     } 
     
+
     aside .content-wrapper .form-description
     aside .content-wrapper .form{
       width: 40%;
       margin: 0;
     }
 
-    .find-out{
-      width: 40%;
-    }
-    
+    /*************** GAH! ****************/  
     .form{
       display: flex;
-      justify-content: center;
-      flex-flow: column;
-      width: 40%;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .form-description p{
+      width: 45%;
     }
 
     /*------------ FEATURES -----------------------*/
@@ -537,14 +544,11 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      
-  
+      padding-top: 20px;
     }
 
     .mission-content p{
-     
-      width: 45%;
-  
+     width: 45%;
     }
 
 /*------------ MAP ----------------------------*/
