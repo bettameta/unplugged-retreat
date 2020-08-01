@@ -95,7 +95,8 @@
   
   /*--------------- BASE HEADER - FOOTER STYLES ------------*/
   
-  header, footer{
+  header, 
+  footer{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -150,6 +151,10 @@
     flex-direction: column;
     
   }
+
+  footer p{
+    margin: 0;
+  }
   
   footer .content-wrapper{
     width: 55%;
@@ -176,7 +181,6 @@
   
   }
 
-  
   footer .copyright{
     margin: 20px 0;
   }
@@ -194,8 +198,8 @@
   
   }
   
-  /******* OMGOSH THER WAS AN EXTRA /DIV IN THE HTML */
  /*-------- ASIDE ------------*/ 
+  
   aside{
     display: flex;
     justify-content: center;
@@ -270,9 +274,6 @@
     
   }
   
-  .mission .content-wrapper{
-    
-  }
 
   /*-------- CONTACT -------------*/
 
@@ -467,8 +468,9 @@
     footer .copyright{
     /*-  width: 100%;  MAKES CONTENT MOVE TO THE LEFT? It should be centered
                         SO ADDED JUSTIFY-CONTENT TO FIX??*/
-      display: flex;
-      justify-content: center;
+        display: flex;
+        justify-content: center;
+
       width: 100%
     }
 
@@ -476,33 +478,24 @@
                   TABLET HOME PAGE 
   -----------------------------------------------------*/
     /*------------ HERO AREA ------------------------*/
-    /*********** FIX BUTTONS MAYBE SPLIT .FORM DIV? **/
+    /*********** FIX BUTTON SIZES **/
     /*------------ ASIDE -------------------------*/
     aside .content-wrapper{
+      margin: 50px 0;
+      
       display: flex;
       justify-content: space-between;
-    
       flex-flow: row wrap;
-      margin: 50px 0;
+      
     } 
     
 
-    aside .content-wrapper .form-description
+    aside .content-wrapper .form-description,
     aside .content-wrapper .form{
       width: 40%;
       margin: 0;
     }
 
-    /*************** GAH! ****************/  
-    .form{
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-    }
-
-    .form-description p{
-      width: 45%;
-    }
 
     /*------------ FEATURES -----------------------*/
     .features article{
@@ -531,7 +524,10 @@
                   TABLET ABOUT PAGE 
   -----------------------------------------------------*/
 /*------------ MISSION ------------------------*/
-    .mission content{
+       
+ /*********** WHY ISN'T THIS FLOATING IN TABLET AND DESKTOP ***/
+
+    .mission-content{
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -539,7 +535,7 @@
     }
 
     .mission-content p{
-    width: 45%;
+      width: 45%;
     }
 
 /*------------ MAP ----------------------------*/
@@ -590,24 +586,25 @@
       max-width: 960px;
     }
   /*------------ HEADER AND FOOTER------------------------*/
+
+
   /*------------ HERO AREA ------------------------*/ 
     .hero-area h1{
       width: 55%;
     }
 
-    aside .content-wrapper .form-description,
-    aside .content-wrapper .form{
-      width: 66%;
-    }
 
   /*--------------- ASIDE ----------------------------*/
     aside .content-wrapper{
       justify-content: center;
+      justify-content: space-around;
+      
     }
 
     aside .content-wrapper .form-description,
-    aside .content-wrapper .fomr{
-      width: 66%;
+    aside .content-wrapper .form{
+      width: 28%;
+      
     }
 
   /*--------------- FEATURES ----------------------------*/
@@ -628,20 +625,26 @@
   /*----------------------------------------------------
                   DESKTOP ABOUT PAGE 
   -----------------------------------------------------*/
-  /*--------------- MISSION ----------------------------*/
+  /*--------------- MISSION AND CONTACT ----------------------------*/
 
     .mission h2,
     .contact-section .content-wrapper h2{
-
+      width: 75%;
+      
     }
-    
-
+    /******* NEED SOMETHING HERE **************
+    .mission .contact-content h4,
+    .mission .contact-content p{
+      width: 31%;
+     
+    }
+     *************************************/
   /*----------------------------------------------------
                   DESKTOP FAQ PAGE 
   -----------------------------------------------------*/
 
     .faq h2{
-        width:
+        width: 60%;
     }
 }
   
