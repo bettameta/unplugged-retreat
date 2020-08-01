@@ -591,6 +591,7 @@
   /*------------ HERO AREA ------------------------*/ 
     .hero-area h1{
       width: 55%;
+      /* SAYS 60% */
     }
 
 
@@ -604,23 +605,26 @@
     aside .content-wrapper .form-description,
     aside .content-wrapper .form{
       width: 28%;
-      
+      /* SAYS 30% */
     }
 
   /*--------------- FEATURES ----------------------------*/
 
     .features h2{
-      width: 70%;
+      width: 80%;
+      /*  SAYS 90%  */
     }
 
     .features article{
       flex-basis: 30%;
+      /* SAYS 33% */
     }
 
   /*--------------- REVIEWS ----------------------------*/
 
     .reviews article div{
       width: 40%;
+      /* SAYS 42% */
     }
   /*----------------------------------------------------
                   DESKTOP ABOUT PAGE 
@@ -629,7 +633,8 @@
 
     .mission h2,
     .contact-section .content-wrapper h2{
-      width: 75%;
+      width: 80%;
+      /*  SAYS 95  */
       
     }
     /******* NEED SOMETHING HERE **************
@@ -644,7 +649,8 @@
   -----------------------------------------------------*/
 
     .faq h2{
-        width: 60%;
+        width: 100%;
+        /* I ADJUSTED THIS UP */
     }
 }
   
