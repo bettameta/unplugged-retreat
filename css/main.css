@@ -151,10 +151,8 @@
   address{
     font-style: normal;
   
-  }
-/***********************************/
- 
-
+  }  
+  
   .content-wrapper{
     padding: 50px 0;
     width: 90%;
@@ -170,16 +168,15 @@
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+  
   }
   
   /*-------- HEADER STYLES -----------------------*/
   
   header{
     padding: 15px 0;
-    height: 135px;
-    font-family: 'Open Sans', sans-serif;
-    text-transform: uppercase;
     background-color: #202322;
+  
   }
   
   header .content-wrapper{
@@ -188,7 +185,7 @@
     align-items: center;
     flex-flow: row wrap;
     margin: 0;
-    
+   
   }
   
   
@@ -206,6 +203,9 @@
     align-items: center;
     flex-flow: row wrap;
     width: 60%;
+    font-size: 1.125em;
+    font-weight: 700;
+    text-transform: uppercase;
     
   }
   
@@ -213,30 +213,23 @@
     display: flex;
     justify-content: space-around;
     width: 100%;
-    padding-left: 15px;
+  }
 
+  header nav ul li{
+    font-size: 1.125em;
   }
  
   /*-------- FOOTER --------------*/
   footer{
-    flex-direction: column;
+    flex-direction: column;  
     background-color: #202322;
+    /* THIS FIXES MY EARLIER ALIGNMENT CODE */
+    text-align: center; 
     
   }
 
-  footer h4{
-    display: flex;
-    justify-content: center;
-    font-weight: lighter;
-    margin-bottom: 25px;
-  }
-
   footer p{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 0;
+   margin: 0;
   }
   
   footer .content-wrapper{
@@ -260,9 +253,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-     /*  ************** I ADDED THIS ********   */
-    display: inline;
-  
+ 
   }
 
   footer .copyright{
@@ -274,7 +265,7 @@
   -----------------------------------------------------*/
   /*-------- MAIN HOMEPAGE --------------------------------*/
   
-  /*-------- HERO ----------------*/
+  /*-------- HERO AREA --------*/
   .hero-area{
     display: flex;
     justify-content: center;
@@ -285,7 +276,8 @@
   .hero-area h1{
     font-size: 2.25em;
     font-family: 'Poppins', sans-serif;
-    font-weight: lighter;
+    font-weight: 500;
+    line-height: 1.2em;
   }
 
   
@@ -299,7 +291,7 @@
     background-color: #527158;
   
   }
-
+/*********** I ADDED THIS BUT HAS NO AFFECT */
   aside p{
     font-family: 'Open Sans' , sans-serif;
     font-size: .88em;
@@ -348,9 +340,8 @@
   }
   
   .features article{
-    width: 63%;
-     /*  ************** HOWz MEASURED?
-                        I GOT 57%  ********   */
+     /*  ** ? I GOT 57%  ********   */
+     width: 63%;
     margin: 30px 0;
   }
   
@@ -364,6 +355,7 @@
   
   .features p{
     margin: 0;
+    text-align: center;
     
   }
   
@@ -377,12 +369,13 @@
   
   .reviews h2{
     margin-bottom: 40px;
+    line-height: 1em;
   
   }
   
   .reviews h3{
-     /*  ************** HOW MEASURED? ********   */
-    width: 80%;
+     /*  ************** HOW IS THIS MEASURED? ********   */
+    width: 68%;
     margin: 20px 0;
   }
 
@@ -402,10 +395,6 @@
     flex-flow: row wrap;
     background-color: #527158;
     
-  }
-
-  .mission p{
-    line-height: 1.3em;
   }
   
 
@@ -445,14 +434,16 @@
   
   .faq h2{
     margin-bottom: 40px;
+    line-height: 1em;
   }
 
-  .faq p{
-    line-height: 1.3em;
-  }
   
   .faq-content{
     margin-bottom: 50px;
+  }
+
+  .faq-content h4{
+    line-height: 1.3em;
   }
   /**************************************************/
   
