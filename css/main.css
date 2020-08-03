@@ -140,7 +140,8 @@
   }
   /* LOGO */
   img{
-  
+    width: 100%;
+    
   }
 
   /*  MAP */ 
@@ -610,8 +611,7 @@
                   TABLET HOME PAGE 
   -----------------------------------------------------*/
     /*------------ HERO AREA ------------------------*/
-    /*********** FIX BUTTON SIZES **/
-    /*------------ ASIDE -------------------------*/
+  
     aside .content-wrapper{
       margin: 50px 0;
       
@@ -621,7 +621,6 @@
       
     } 
     
-
     aside .content-wrapper .form-description,
     aside .content-wrapper .form{
       width: 40%;
