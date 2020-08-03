@@ -138,15 +138,16 @@
     line-height: 1.13em;
     
   }
-  /* LOGO */
+  /* IMG */
   img{
     width: 100%;
-    
+
   }
 
-  /*  MAP */ 
+  /* IMAGE TAG */ 
   figure{
-  
+    margin: 0;
+
   }
   
   address{
@@ -179,13 +180,22 @@
     background-color: #202322;
   
   }
+
+  header figure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 62%;
+  }
   
   header .content-wrapper{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-    margin: 0;
+    margin: 0; 
+    padding: 15px 0;
    
   }
   
@@ -205,7 +215,7 @@
     flex-flow: row wrap;
     width: 60%;
     font-size: 1.125em;
-    font-weight: 700;
+    font-weight: 600;
     text-transform: uppercase;
     
   }
@@ -213,6 +223,9 @@
   header nav ul{
     display: flex;
     justify-content: space-around;
+    /* MADE SOME CHANGES TO RESIZE HEADER */
+        margin: 0;
+        padding: 0;
     width: 100%;
   }
 
@@ -543,246 +556,259 @@
                       TABLET MEDIA QUERIES 
   -----------------------------------------------------*/
  
-  @media only screen and (min-width: 768px){
-    /*----------- GENERAL STYLES ------------------*/
-    .content-wrapper{
-      max-width: 640px;
-      margin: 100px 0;
-    }
-  /*------------ HEADER AND FOOTER------------------------*/
-  /*------------ HEADER ------------------------*/    
-     header{
-      padding: 33px 0;
-      display: flex;
-      justify-content: space-around;
-     }
-
-     header .content-wrapper{
-      display: flex;
-      justify-content: space-between;
-      width: 100%;
-   
-     }
-
-     header nav{
-       width: 20%;
-     }
-
-     header nav ul{
-       display: flex;
-       justify-content: space-between;
-
-     }
-
-     .header-divider{
-       display: none;
-
-     }
-    
-     /*------------ FOOTER ------------------------*/
-     footer .content-wrapper{
-      width: 65%;
-      margin: 100px 0;
+@media only screen and (min-width: 768px){
+  /*----------- GENERAL STYLES ------------------*/
+  .content-wrapper{
+    max-width: 640px;
+    margin: 100px 0;
+  }
+/*------------ HEADER AND FOOTER------------------------*/
+/*------------ HEADER ------------------------*/    
+    header{
+    padding: 33px 0;
+    display: flex;
+    justify-content: space-around;
     }
 
-    .footer-content{
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-        /*--- I ADDED THIS TO ADJUST HEIGHT  -----*/    
-        align-items: baseline;
-
-    }
-
-    footer .contact{
-      margin-bottom: 0;
-    }
-    
-    footer .copyright{
-    /*-  width: 100%;  MAKES CONTENT MOVE TO THE LEFT? It should be centered
-                        SO ADDED JUSTIFY-CONTENT TO FIX??*/
-        display: flex;
-        justify-content: center;
-
-      width: 100%
-    }
-
-    /*----------------------------------------------------
-                  TABLET HOME PAGE 
-  -----------------------------------------------------*/
-    /*------------ HERO AREA ------------------------*/
+    header .content-wrapper{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
   
-    aside .content-wrapper{
-      margin: 50px 0;
-      
-      display: flex;
-      justify-content: space-between;
-      flex-flow: row wrap;
-      
-    } 
-    
-    aside .content-wrapper .form-description,
-    aside .content-wrapper .form{
-      width: 40%;
-      margin: 0;
     }
 
+    header nav{
+      width: 20%;
+    }
 
-    /*------------ FEATURES -----------------------*/
-    .features article{
+    header figure{
       display: flex;
       justify-content: center;
       align-items: center;
-      flex-flow: column;
-      flex-basis: 50%;
+      width: 30%;
     }
 
-    .features .features-item-description{
-      width: 50%;
-    }
-
-    /*------------ REVIEWS ------------------------*/
-    .reviews article{
+    header nav ul{
       display: flex;
       justify-content: space-between;
+
     }
-    .reviews article div{
-      width: 49%;
+
+    .header-divider{
+      display: none;
+
     }
+  
+    /*------------ FOOTER ------------------------*/
+    footer .content-wrapper{
+    width: 65%;
+    margin: 100px 0;
+  }
+
+  .footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+      /*--- I ADDED THIS TO ADJUST HEIGHT  -----*/    
+      align-items: baseline;
+
+  }
+
+  footer .contact{
+    margin-bottom: 0;
+  }
+  
+  footer .copyright{
+  /*-  width: 100%;  MAKES CONTENT MOVE TO THE LEFT? It should be centered
+                      SO ADDED JUSTIFY-CONTENT TO FIX??*/
+      display: flex;
+      justify-content: center;
+
+    width: 100%
+  }
+
+  /*----------------------------------------------------
+                TABLET HOME PAGE 
+-----------------------------------------------------*/
+  /*------------ HERO AREA ------------------------*/
+
+  aside .content-wrapper{
+    margin: 50px 0;
+    
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    
+  } 
+  
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form{
+    width: 40%;
+    margin: 0;
+  }
+
+
+  /*------------ FEATURES -----------------------*/
+  .features article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    flex-basis: 50%;
+  }
+
+  .features .features-item-description{
+    width: 50%;
+  }
+
+  /*------------ REVIEWS ------------------------*/
+  .reviews article{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .reviews article div{
+    width: 49%;
+  }
 
 
 /*----------------------------------------------------
-                  TABLET ABOUT PAGE 
-  -----------------------------------------------------*/
+                TABLET ABOUT PAGE 
+-----------------------------------------------------*/
 /*------------ MISSION ------------------------*/
-       
- /*********** WHY ISN'T THIS FLOATING IN TABLET AND DESKTOP ***/
+      
+/*********** WHY ISN'T THIS FLOATING IN TABLET AND DESKTOP ***/
 
-    .mission-content{
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding-top: 20px;
-    }
+  .mission-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+  }
 
-    .mission-content p{
-      width: 45%;
-    }
+  .mission-content p{
+    width: 45%;
+  }
 
 /*------------ MAP ----------------------------*/
 
 /*------------ CONTACT ------------------------*/
-    .contact-section .content-wrapper h2{
-      width: 80%;
-    }
+  .contact-section .content-wrapper h2{
+    width: 80%;
+  }
 
-    .contact-content{
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-    }
+  .contact-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
 
 
 /*----------------------------------------------------
-                  TABLET FAQ PAGE 
-  -----------------------------------------------------*/
-    .faq .content-wrapper{
-      display: flex;
-      justify-content: space-between;
-    /*--- I ADDED THIS TO FIX HEIGHT  -----*/    
-        align-items: baseline;
-    }
+                TABLET FAQ PAGE 
+-----------------------------------------------------*/
+  .faq .content-wrapper{
+    display: flex;
+    justify-content: space-between;
+  /*--- I ADDED THIS TO FIX HEIGHT  -----*/    
+      align-items: baseline;
+  }
 
-    .faq-content{
-      flex-basis: 45%;
-  
-    }
+  .faq-content{
+    flex-basis: 45%;
 
-    .faq h2{
-      width: 100%
-    }
+  }
+
+  .faq h2{
+    width: 100%
+  }
 
 
 
 }
 
-  
-  
-  
-  /*----------------------------------------------------
-                      DESKTOP MEDIA QUERIES 
-  -----------------------------------------------------*/
-  @media only screen and (min-width: 1200px){
-    .content-wrapper{
-      max-width: 960px;
-    }
-  /*------------ HEADER AND FOOTER------------------------*/
 
 
-  /*------------ HERO AREA ------------------------*/ 
-    .hero-area h1{
-      width: 55%;
-      /* SAYS 60% */
-    }
+
+/*----------------------------------------------------
+                    DESKTOP MEDIA QUERIES 
+-----------------------------------------------------*/
+@media only screen and (min-width: 1200px){
+  .content-wrapper{
+    max-width: 960px;
+  }
+/*------------ HEADER AND FOOTER------------------------*/
+  header figure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24%;
+  }
+
+/*------------ HERO AREA ------------------------*/ 
+  .hero-area h1{
+    width: 55%;
+    /* SAYS 60% */
+  }
 
 
-  /*--------------- ASIDE ----------------------------*/
-    aside .content-wrapper{
-      justify-content: center;
-      justify-content: space-around;
-      
-    }
+/*--------------- ASIDE ----------------------------*/
+  aside .content-wrapper{
+    justify-content: center;
+    justify-content: space-around;
+    
+  }
 
-    aside .content-wrapper .form-description,
-    aside .content-wrapper .form{
-      width: 28%;
-      /* SAYS 30% */
-    }
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form{
+    width: 28%;
+    /* SAYS 30% */
+  }
 
-  /*--------------- FEATURES ----------------------------*/
+/*--------------- FEATURES ----------------------------*/
 
-    .features h2{
-      width: 80%;
-      /*  SAYS 90%  */
-    }
+  .features h2{
+    width: 80%;
+    /*  SAYS 90%  */
+  }
 
-    .features article{
-      flex-basis: 30%;
-      /* SAYS 33% */
-    }
+  .features article{
+    flex-basis: 30%;
+    /* SAYS 33% */
+  }
 
-  /*--------------- REVIEWS ----------------------------*/
+/*--------------- REVIEWS ----------------------------*/
 
-    .reviews article div{
-      width: 40%;
-      /* SAYS 42% */
-    }
-  /*----------------------------------------------------
-                  DESKTOP ABOUT PAGE 
-  -----------------------------------------------------*/
-  /*--------------- MISSION AND CONTACT ----------------------------*/
+  .reviews article div{
+    width: 40%;
+    /* SAYS 42% */
+  }
+/*----------------------------------------------------
+                DESKTOP ABOUT PAGE 
+-----------------------------------------------------*/
+/*--------------- MISSION AND CONTACT ----------------------------*/
 
-    .mission h2,
-    .contact-section .content-wrapper h2{
-      width: 80%;
-      /*  SAYS 95  */
-      
-    }
-    /******* NEED SOMETHING HERE **************
-    .mission .contact-content h4,
-    .mission .contact-content p{
-      width: 31%;
-     
-    }
-     *************************************/
-  /*----------------------------------------------------
-                  DESKTOP FAQ PAGE 
-  -----------------------------------------------------*/
+  .mission h2,
+  .contact-section .content-wrapper h2{
+    width: 80%;
+    /*  SAYS 95  */
+    
+  }
+  /******* NEED SOMETHING HERE **************
+  .mission .contact-content h4,
+  .mission .contact-content p{
+    width: 31%;
+    
+  }
+    *************************************/
+/*----------------------------------------------------
+                DESKTOP FAQ PAGE 
+-----------------------------------------------------*/
 
-    .faq h2{
-        width: 100%;
-        /* I ADJUSTED THIS UP */
-    }
+  .faq h2{
+      width: 100%;
+      /* I ADJUSTED THIS UP */
+  }
 }
   
   
