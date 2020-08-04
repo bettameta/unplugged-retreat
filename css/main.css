@@ -117,8 +117,29 @@
     
   }
 
-
+  /*********** HERO BACKGROUND IMAGE *********/
+  .hero-area{
+    background-image: url('../img/woman-on-bridge.jpg');
+    background-size: cover;
+    background-repeat: no-repeat #1a2c2a;
+    background-image: center;
+    background-position: 50% 50%;
+    
+    width: 100%;
+   
+  }
   
+  /*********** FEATURES BACKGROUND IMAGE ********/
+
+  .features{
+    background-image: url('../img/team-cookout.jpg');
+    background-size: cover;
+    background-repeat: no-repeat #1a2c2a;
+    background-image: center;
+
+    width: 100%;
+  }
+
   h2{
   font-family: 'Poppins', sans-serif;
   font-size: 1.87em;
@@ -176,7 +197,8 @@
   /*-------- HEADER STYLES -----------------------*/
   
   header{
-    padding: 15px 0;
+    padding: 15px 0 5px 0;
+    
     background-color: #202322;
   
   }
@@ -194,7 +216,7 @@
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-    margin: 0; 
+    margin: 20px 0; 
     padding: 15px 0;
    
   }
@@ -239,6 +261,7 @@
     background-color: #202322;
     /* THIS FIXES MY EARLIER ALIGNMENT CODE */
     text-align: center; 
+
     
   }
 
@@ -248,7 +271,8 @@
   
   footer .content-wrapper{
     width: 55%;
-    margin: 50px 0;
+    margin: 0;
+    padding: 30px 0;
   }
   
   footer .contact{
@@ -271,7 +295,7 @@
   }
 
   footer .copyright{
-    margin: 20px 0;
+    margin: 20px 0 10px 0;
   }
   
   /*----------------------------------------------------
@@ -280,11 +304,18 @@
   /*-------- MAIN HOMEPAGE --------------------------------*/
   
   /*-------- HERO AREA --------*/
+ 
   .hero-area{
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
+    height: 500px;
   
+  }
+
+  .hero-area .content-wrapper{
+    margin: 20px 0 40px 0;
+
   }
 
   .hero-area h1{
@@ -292,9 +323,10 @@
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     line-height: 1.2em;
+    margin-top: 0;
   }
 
-  
+
  /*-------- ASIDE ------------*/ 
   
   aside{
@@ -333,7 +365,7 @@
     font-family: 'Poppins', Helvetica, Arial, sans-serif;
     font-weight: 500;
     font-size: 1.125em;
-    color: #e2e3ed;
+    color: #b1b2b8;
     border: none;
     text-align: center;
     text-transform: uppercase;
@@ -662,15 +694,27 @@
   }
 
   /*------------ REVIEWS ------------------------*/
+  
+  
   .reviews article{
     display: flex;
     justify-content: space-between;
+    flex-flow: row wrap;
+    
+    align-items: center;
   }
 
   .reviews article div{
     width: 49%;
   }
 
+  .reviews figure{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: 49%;
+  }
 
 /*----------------------------------------------------
                 TABLET ABOUT PAGE 
@@ -737,7 +781,7 @@
   .content-wrapper{
     max-width: 960px;
   }
-/*------------ HEADER AND FOOTER------------------------*/
+/*------------ HEADER -------------------------------*/
   header figure{
     display: flex;
     justify-content: center;
@@ -745,7 +789,7 @@
     width: 24%;
   }
 
-/*------------ HERO AREA ------------------------*/ 
+/*------------ HERO AREA ---------------------------*/ 
   .hero-area h1{
     width: 55%;
     /* SAYS 60% */
@@ -765,7 +809,7 @@
     /* SAYS 30% */
   }
 
-/*--------------- FEATURES ----------------------------*/
+/*--------------- FEATURES --------------------------*/
 
   .features h2{
     width: 80%;
