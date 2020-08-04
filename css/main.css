@@ -749,8 +749,6 @@
                 TABLET ABOUT PAGE 
 -----------------------------------------------------*/
 /*------------ MISSION ------------------------*/
-      
-/*********** WHY ISN'T THIS FLOATING IN TABLET AND DESKTOP ***/
 
 .mission .content-wrapper{
     margin: 50px 0;
@@ -826,6 +824,7 @@ footer .content-wrapper{
     font-size: 14px;
   }
 
+  /*----------- FOOTER ----------------*/
   footer .content-wrapper{
     margin: 0;
   }
@@ -898,14 +897,19 @@ footer .content-wrapper{
 /*--------------- MISSION AND CONTACT ----------------------------*/
 
   .mission .content-wrapper{
-    margin: 25px 0;
+    margin: 0;
   }
 
   .mission h2,
   .contact-section .content-wrapper h2{
     width: 80%;
-    /*  SAYS 95  */
+    font-size: 40px;
+    margin-bottom: 0;
     
+  }
+
+  .mission .content-wrapper .mission-content p{
+    font-size: 16px;
   }
 
 
@@ -916,7 +920,7 @@ footer .content-wrapper{
   }
   
   .contact-section .content-wrapper{
-    
+    margin-top: 10px;
   }
 /*----------------------------------------------------
                 DESKTOP FAQ PAGE 
@@ -939,6 +943,11 @@ footer .content-wrapper{
 
   .faq h4{
     margin-top: 0;
+  }
+
+  address .contact-content{
+    display: flex;
+    justify-content: space-between;
   }
 
 }
