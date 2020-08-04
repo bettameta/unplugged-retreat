@@ -746,6 +746,9 @@
   }
 
 /*------------ MAP ----------------------------*/
+  .map figure{
+    padding-bottom: 46%; 
+  }
 
 /*------------ CONTACT ------------------------*/
   .contact-section .content-wrapper h2{
@@ -849,6 +852,13 @@
     /*  SAYS 95  */
     
   }
+
+  /*------------- MAP -----------------------------*/
+  .map figure{
+    padding-bottom: 38%; 
+
+  }
+   
   /******* NEED SOMETHING HERE **************
   .mission .contact-content h4,
   .mission .contact-content p{
