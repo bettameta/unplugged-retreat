@@ -192,8 +192,7 @@
   /*-------- HEADER STYLES -----------------------*/
   
   header{
-    padding: 15px 0 5px 0;
-    
+    padding: 15px 0 5px 0; 
     background-color: #202322;
   
   }
@@ -211,7 +210,7 @@
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-    margin: 20px 0; 
+    margin: 0; 
     padding: 15px 0;
    
   }
@@ -263,11 +262,15 @@
   footer p{
    margin: 0;
   }
+
+  footer h4{
+    font-size: 18px;
+  }
   
   footer .content-wrapper{
     width: 55%;
     margin: 0;
-    padding: 30px 0;
+    padding: 20px 0;
   }
   
   footer .contact{
@@ -291,6 +294,11 @@
 
   footer .copyright{
     margin: 20px 0 10px 0;
+  }
+
+  footer .copyright h5{
+    margin-bottom:  10px;
+    font-size: 14px;
   }
   
   /*----------------------------------------------------
@@ -486,11 +494,16 @@
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-    margin: 50px 0 0 0;
+    margin: 0;
+    padding: 25px 0;
   }
+
+    .faq .content-wrapper .faq-content{
+      margin-bottom: 20px;
+    }
   
   .faq h2{
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     line-height: 1em;
   }
 
@@ -501,6 +514,7 @@
 
   .faq-content h4{
     line-height: 1.3em;
+    margin: 15px 0;
   }
   /**************************************************/
   
@@ -608,7 +622,7 @@
 /*------------ HEADER AND FOOTER------------------------*/
 /*------------ HEADER ------------------------*/    
     header{
-    padding: 33px 0;
+    padding: 0;
     display: flex;
     justify-content: space-around;
     }
@@ -618,6 +632,10 @@
     justify-content: space-between;
     width: 100%;
   
+    }
+
+    header a{
+      font-size: 16px;;
     }
 
     header nav{
@@ -734,7 +752,12 @@
       
 /*********** WHY ISN'T THIS FLOATING IN TABLET AND DESKTOP ***/
 
-  .mission-content{
+.mission .content-wrapper{
+    margin: 50px 0;
+    padding: 25px 0;
+  }  
+
+.mission-content{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -751,8 +774,15 @@
   }
 
 /*------------ CONTACT ------------------------*/
+  
+  .contact-section .content-wrapper{
+    margin: 50px 0;
+    padding: 25px 0;
+  }
+
   .contact-section .content-wrapper h2{
     width: 80%;
+
   }
 
   .contact-content{
@@ -761,15 +791,24 @@
     align-items: flex-start;
   }
 
+/************** FOOTER *******************/
 
+footer .content-wrapper{
+    margin: 25px 0;
+}
 /*----------------------------------------------------
                 TABLET FAQ PAGE 
 -----------------------------------------------------*/
   .faq .content-wrapper{
     display: flex;
     justify-content: space-between;
-  /*--- I ADDED THIS TO FIX HEIGHT  -----*/    
-      align-items: baseline;
+    align-items: baseline;
+    margin: 0;
+  }
+
+  .faq .content-wrapper .faq-content{
+    margin-bottom: 15px;
+
   }
 
   .faq-content{
@@ -778,10 +817,18 @@
   }
 
   .faq h2{
-    width: 100%
+    width: 100%;
+    font-size: 36px;
+    margin-bottom: 20px
   }
 
+  .faq h4{
+    font-size: 14px;
+  }
 
+  footer .content-wrapper{
+    margin: 0;
+  }
 
 }
 
@@ -796,6 +843,10 @@
     max-width: 960px;
   }
 /*------------ HEADER -------------------------------*/
+  header .content-wrapper{
+    margin: 20px;
+  }
+
   header figure{
     display: flex;
     justify-content: center;
@@ -846,6 +897,10 @@
 -----------------------------------------------------*/
 /*--------------- MISSION AND CONTACT ----------------------------*/
 
+  .mission .content-wrapper{
+    margin: 25px 0;
+  }
+
   .mission h2,
   .contact-section .content-wrapper h2{
     width: 80%;
@@ -853,27 +908,39 @@
     
   }
 
+
   /*------------- MAP -----------------------------*/
   .map figure{
     padding-bottom: 38%; 
 
   }
-   
-  /******* NEED SOMETHING HERE **************
-  .mission .contact-content h4,
-  .mission .contact-content p{
-    width: 31%;
+  
+  .contact-section .content-wrapper{
     
   }
-    *************************************/
 /*----------------------------------------------------
                 DESKTOP FAQ PAGE 
 -----------------------------------------------------*/
+  .faq .content-wrapper{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: baseline;
+  }
+
+  .faq .content-wrapper .faq-content{
+    margin-bottom: 25px;
+
+  }
 
   .faq h2{
-      width: 100%;
-      /* I ADJUSTED THIS UP */
+    width: 100%;
+    font-size: 48px;
   }
+
+  .faq h4{
+    margin-top: 0;
+  }
+
 }
   
   
