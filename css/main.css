@@ -264,7 +264,7 @@
   }
 
   footer h4{
-    font-size: 18px;
+    font-size: 1.3em;
   }
   
   footer .content-wrapper{
@@ -298,7 +298,7 @@
 
   footer .copyright h5{
     margin-bottom:  10px;
-    font-size: 14px;
+    font-size: .88em;
   }
   
   /*----------------------------------------------------
@@ -512,8 +512,9 @@
     margin-bottom: 50px;
   }
 
-  .faq-content h4{
-    line-height: 1.3em;
+  .faq .content-wrapper .faq-content h4{
+    font-size: 1.3em;
+    line-height: 1.5em;
     margin: 15px 0;
   }
   /**************************************************/
@@ -631,11 +632,12 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
+    margin: 20px 0;
   
     }
 
     header a{
-      font-size: 16px;;
+      font-size: .9em;
     }
 
     header nav{
@@ -652,6 +654,9 @@
     header nav ul{
       display: flex;
       justify-content: space-between;
+
+      
+    
 
     }
 
@@ -677,6 +682,16 @@
 
   footer .contact{
     margin-bottom: 0;
+  }
+
+  footer .contact h4,
+  footer .social h4{
+    font-size: 1.5em;
+  }
+
+  footer .contact p{
+    font-size: .88em;
+    line-height: 1.5em;
   }
   
   footer .copyright{
@@ -801,7 +816,7 @@ footer .content-wrapper{
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    margin: 0;
+    margin: 40px 0;
   }
 
   .faq .content-wrapper .faq-content{
@@ -816,17 +831,22 @@ footer .content-wrapper{
 
   .faq h2{
     width: 100%;
-    font-size: 36px;
+    font-size: 2.25em;
     margin-bottom: 20px
   }
 
   .faq h4{
-    font-size: 14px;
+    font-size: .875em;
+    
+  }
+
+  .faq .content-wrapper .faq-content p{
+      line-height: 1.3em;
   }
 
   /*----------- FOOTER ----------------*/
   footer .content-wrapper{
-    margin: 0;
+    margin: 40px 0;
   }
 
 }
@@ -853,10 +873,17 @@ footer .content-wrapper{
     width: 24%;
   }
 
+/*------------ FOOTER ------------------------------*/ 
+
+.footer .contact p{
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
 /*------------ HERO AREA ---------------------------*/ 
   .hero-area h1{
     width: 55%;
-    /* SAYS 60% */
+  
   }
 
 
@@ -870,7 +897,7 @@ footer .content-wrapper{
   aside .content-wrapper .form-description,
   aside .content-wrapper .form{
     width: 28%;
-    /* SAYS 30% */
+   
   }
 
 /*--------------- FEATURES --------------------------*/
@@ -903,13 +930,13 @@ footer .content-wrapper{
   .mission h2,
   .contact-section .content-wrapper h2{
     width: 80%;
-    font-size: 40px;
+    font-size: 2.5em;
     margin-bottom: 0;
     
   }
 
   .mission .content-wrapper .mission-content p{
-    font-size: 16px;
+    font-size: 1em;
   }
 
 
@@ -938,11 +965,17 @@ footer .content-wrapper{
 
   .faq h2{
     width: 100%;
-    font-size: 48px;
+    font-size: 3em;
+    margin: 40px 0;
   }
 
   .faq h4{
     margin-top: 0;
+  }
+
+  .faq p{
+    font-size: 1em;
+    line-height: 1em;
   }
 
   address .contact-content{
