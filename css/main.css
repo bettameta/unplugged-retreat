@@ -119,11 +119,8 @@
 
   /*********** HERO BACKGROUND IMAGE *********/
   .hero-area{
-    background-image: url('../img/woman-on-bridge.jpg');
+    background: url('../img/woman-on-bridge.jpg') center no-repeat #1a2c2a;
     background-size: cover;
-    background-repeat: no-repeat #1a2c2a;
-    background-image: center;
-    background-position: 50% 50%;
     
     width: 100%;
    
@@ -132,10 +129,8 @@
   /*********** FEATURES BACKGROUND IMAGE ********/
 
   .features{
-    background-image: url('../img/team-cookout.jpg');
+    background: url('../img/team-cookout.jpg') center no-repeat #1a2c2a;
     background-size: cover;
-    background-repeat: no-repeat #1a2c2a;
-    background-image: center;
 
     width: 100%;
   }
