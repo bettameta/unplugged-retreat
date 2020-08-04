@@ -774,11 +774,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    align-items: baseline;
     padding-top: 20px;
   }
 
   .mission-content p{
     width: 45%;
+
   }
 
 /*------------ MAP ----------------------------*/
@@ -789,8 +791,8 @@
 /*------------ CONTACT ------------------------*/
   
   .contact-section .content-wrapper{
-    margin: 50px 0;
-    padding: 25px 0;
+    margin: 50px 0 60px 0;
+    padding: 30px 0 ;
   }
 
   .contact-section .content-wrapper h2{
@@ -802,6 +804,11 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+  }
+
+  .contact-content p{
+    font-size: .88em;
+    line-height: 1.12em;
   }
 
 /************** FOOTER *******************/
@@ -875,9 +882,15 @@ footer .content-wrapper{
 
 /*------------ FOOTER ------------------------------*/ 
 
+footer .contact h4,
+footer .social h4{
+  font-size: 1.9em;
+
+}
+
 .footer .contact p{
-  font-size: 1.3em;
-  line-height: 1.5em;
+  font-size: 1.4em;
+  line-height: 1.6em;
 }
 
 /*------------ HERO AREA ---------------------------*/ 
