@@ -436,7 +436,7 @@
   }
 
   .reviews h3 span{
-    font-style: oblique;
+  
     font-variant: small-caps;
   }
 
@@ -811,7 +811,7 @@
   .mission-content p{
     width: 45%;
     font-size: 1em;
-    line-height: 1.12em;
+    line-height: 1.25em;
 
   }
 
