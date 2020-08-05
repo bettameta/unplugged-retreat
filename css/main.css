@@ -103,8 +103,6 @@
   
   }
   
-  /* COOL THIS FIXED INSTEAD OF 
-    li DISPLAY: INLINE */
   ul, 
   ol{
   list-style-type: none;
@@ -154,13 +152,13 @@
     line-height: 1.13em;
     
   }
-  /* IMG */
+  /*----- IMG -------*/
   img{
     width: 100%;
 
   }
 
-  /* IMAGE TAG */ 
+  /*---- IMAGE TAG --*/ 
   figure{
     margin: 0;
 
@@ -203,6 +201,7 @@
     align-items: center;
     flex-flow: row wrap;
     width: 62%;
+    
   }
   
   header .content-wrapper{
@@ -345,11 +344,11 @@
     background-color: #527158;
   
   }
-/*********** I ADDED THIS BUT HAS NO AFFECT */
+
   aside p{
     font-family: 'Open Sans' , sans-serif;
-    font-size: .88em;
-    line-height: 1.3em;
+    font-size: 1em;
+    line-height: 1.2em;
   }
 
   aside .form {
@@ -432,7 +431,6 @@
   }
   
   .reviews h3{
-     /*  ************** HOW IS THIS MEASURED? ********   */
     width: 68%;
     margin: 20px 0;
   }
@@ -447,6 +445,7 @@
   }
   
   /*-------- END MAIN ----------------------------*/
+
   /*----------------------------------------------------
                   MOBILE STYLES ABOUT PAGE 
   -----------------------------------------------------*/
@@ -635,6 +634,7 @@
     margin: 100px 0;
   }
 /*------------ HEADER AND FOOTER------------------------*/
+
 /*------------ HEADER ------------------------*/    
     header{
     padding: 0;
@@ -669,9 +669,6 @@
       display: flex;
       justify-content: space-between;
 
-      
-    
-
     }
 
     .header-divider{
@@ -704,8 +701,8 @@
   }
 
   footer .contact p{
-    font-size: .88em;
-    line-height: 1.5em;
+    font-size: 1em;
+    line-height: 1.2em;
   }
 
   footer .social-icons{
@@ -722,10 +719,8 @@
   }
   
   footer .copyright{
-  /*-  width: 100%;  MAKES CONTENT MOVE TO THE LEFT? It should be centered
-                      SO ADDED JUSTIFY-CONTENT TO FIX??*/
-      display: flex;
-      justify-content: center;
+    display: flex;
+    justify-content: center;
 
     width: 100%
   }
@@ -797,6 +792,7 @@
 /*----------------------------------------------------
                 TABLET ABOUT PAGE 
 -----------------------------------------------------*/
+
 /*------------ MISSION ------------------------*/
 
 .mission .content-wrapper{
@@ -814,6 +810,8 @@
 
   .mission-content p{
     width: 45%;
+    font-size: 1em;
+    line-height: 1.12em;
 
   }
 
@@ -841,8 +839,8 @@
   }
 
   .contact-content p{
-    font-size: .88em;
-    line-height: 1.12em;
+    font-size: 1em;
+    line-height: 1.2em;
   }
 
 /************** FOOTER *******************/
@@ -927,8 +925,6 @@ footer .social h4{
   line-height: 1.6em;
 }
 
-
-
 /*------------ HERO AREA ---------------------------*/ 
   .hero-area h1{
     width: 55%;
@@ -980,7 +976,8 @@ footer .social h4{
 /*----------------------------------------------------
                 DESKTOP ABOUT PAGE 
 -----------------------------------------------------*/
-/*--------------- MISSION AND CONTACT ----------------------------*/
+
+/*--------------- MISSION AND CONTACT ----------------*/
 
   .mission .content-wrapper{
     margin: 0;
@@ -997,7 +994,6 @@ footer .social h4{
   .mission .content-wrapper .mission-content p{
     font-size: 1em;
   }
-
 
   /*------------- MAP -----------------------------*/
   .map figure{
@@ -1043,12 +1039,6 @@ footer .social h4{
   }
 
 }
-  
-  
-  
-  
-  
- 
   
   /* ==========================================================================
      Print styles.
