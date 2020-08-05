@@ -256,7 +256,6 @@
     /* THIS FIXES MY EARLIER ALIGNMENT CODE */
     text-align: center; 
 
-    
   }
 
   footer p{
@@ -290,6 +289,12 @@
     justify-content: center;
     align-items: center;
  
+  }
+
+  footer .social-icons p i{
+    font-size: 3.75em;
+    color: #527158;
+
   }
 
   footer .copyright{
@@ -389,7 +394,6 @@
   }
   
   .features article{
-     /*  ** ? I GOT 57%  ********   */
      width: 63%;
     margin: 30px 0;
   }
@@ -433,6 +437,11 @@
     margin: 20px 0;
   }
 
+  .reviews h3 span{
+    font-style: oblique;
+    font-variant: small-caps;
+  }
+
   .reviews p{
     line-height: 1.3em;
   }
@@ -460,7 +469,7 @@
     position: relative;
 }
  
-.map iframe {
+  .map iframe {
     width: 100%;
     height: 100%;
     position: absolute; 
@@ -698,6 +707,19 @@
     font-size: .88em;
     line-height: 1.5em;
   }
+
+  footer .social-icons{
+    display: flex;
+    justify-content: space-between;
+
+    width: 12.5em
+ 
+  }
+
+  footer .social-icons i{
+    font-size: 3.75em;
+    color: #527158;
+  }
   
   footer .copyright{
   /*-  width: 100%;  MAKES CONTENT MOVE TO THE LEFT? It should be centered
@@ -904,6 +926,8 @@ footer .social h4{
   font-size: 1.4em;
   line-height: 1.6em;
 }
+
+
 
 /*------------ HERO AREA ---------------------------*/ 
   .hero-area h1{
