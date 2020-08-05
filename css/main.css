@@ -401,6 +401,11 @@
     flex-flow: row wrap;
     
   }
+
+  .features i{
+    font-size: 3.75em;
+    margin-bottom: 40px;
+  }
   
   .features p{
     margin: 0;
@@ -735,6 +740,13 @@
 
   .features .features-item-description{
     width: 50%;
+    font-size: .88em;
+    line-height: 1.12em;
+  }
+
+  .features i{
+    font-size: 4.5em;
+    margin-bottom: 40px;
   }
 
   /*------------ REVIEWS ------------------------*/
@@ -921,8 +933,18 @@ footer .social h4{
   }
 
   .features article{
-    flex-basis: 30%;
-    /* SAYS 33% */
+    flex-basis: 33%;
+   
+  }
+
+  .features .features-item-description{
+    font-size: 1.12em;
+    line-height: 1.5em;
+  }
+
+  .features i{
+    font-size: 3.75em;
+    margin-bottom: 40px;
   }
 
 /*--------------- REVIEWS ----------------------------*/
