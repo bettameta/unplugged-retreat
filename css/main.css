@@ -115,6 +115,10 @@
     
   }
 
+  a:hover{
+    color: #527158;
+  }
+
   /*********** HERO BACKGROUND IMAGE *********/
   .hero-area{
     background: url('../img/woman-on-bridge.jpg') center no-repeat #1a2c2a;
