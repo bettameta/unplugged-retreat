@@ -19,6 +19,7 @@
       height: 100%;
       text-align: center;
       width: 100%;
+      background-color: #1a2c2a;
     }
 
     body {
@@ -28,22 +29,34 @@
     }
 
     h1 {
-      color: #555;
+      color: #808d83;
       font-size: 2em;
       font-weight: 400;
     }
 
     p {
       margin: 0 auto;
-      width: 280px;
+      max-width: 280px;
+      color: aliceblue;
+    }
+
+    .button{
+      color:#808d83;
+      padding: 12px 20px;
+      border: solid 1px #e2f9e6;
+      border-radius: 15px;
+    }
+
+    a{
+      text-decoration: none;
+    }
+
+    .button:hover{
+      background-color: #e2f9e6;
+      color:#1a2c2a
     }
 
     @media only screen and (max-width: 280px) {
-
-      body,
-      p {
-        width: 95%;
-      }
 
       h1 {
         font-size: 1.5em;
@@ -54,10 +67,12 @@
   </style>
 </head>
 
-<body>
-  <h1>Page Not Found</h1>
-  <p>Sorry, but the page you were trying to view does not exist.</p>
-</body>
+    <main>
+      
+      <h1>404<br>Page Not Found</h1><br>
+      <p>Sorry, but the page you're trying to view does not exist.</p><br>
+      <a href="https://bettameta.github.io/unplugged-retreat/"><p class="button">Let's get you Unplugged!</p></a>
+    </main>
 
 </html>
 <!-- IE needs 512+ bytes: https://docs.microsoft.com/archive/blogs/ieinternals/friendly-http-error-pages -->
