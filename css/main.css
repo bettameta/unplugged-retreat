@@ -91,7 +91,7 @@
       
   html{
   font-size: 16px;
-  height: 100%;
+
   }
       
   body{
@@ -99,8 +99,6 @@
   font-size: 1em;
   text-align: left;
   color: #e2e3ed;
-  min-height: 100%;
-
   }
   
   ul, 
@@ -362,7 +360,6 @@
   input[type=text] {
     box-sizing: border-box;
     width: 100%;
-    color: #2a423a;
     font-style: italic;
     color: #9d9ea4;
     padding: 1em;
@@ -445,6 +442,7 @@
   }
 
   .reviews p{
+    font-size: 1em;
     line-height: 1.3em;
   }
   
